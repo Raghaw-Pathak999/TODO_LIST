@@ -1,0 +1,235 @@
+/* Resetting default padding and margin, and using border-box for box sizing */
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body */
+body{
+    height: 1vh;
+    background: linear-gradient(120deg, #b35fbc, #a92f53);
+    background-image: no-repeat;
+}
+
+/* Styling for the main container */
+.container{
+    border: 2px solid white;
+    width: 90%;
+    margin: 3%;
+    left: 2%;
+    position: absolute;
+    padding: 30px 40px;
+    transform: translate(-50% -50%);
+    min-width: 450px;
+    box-shadow: -2px -3px 5px 3px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Styling for the inner container */
+.InnerContainer{
+    background-color: #7b7b7b;
+    width: 40%;
+    height: 150px;
+    padding: 30px 20px;
+    margin-left: 275px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+}
+
+/* Styling for the input inside the inner container */
+.InnerContainer input{
+    display: block;
+    width: 80%;
+    height: 60px;
+    text-align: center;
+    margin-left:40px ;
+    font-size:15px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 6px 2px rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* Styling for the button inside the inner container */
+.InnerContainer button{
+    margin-top: 15px;
+    margin-left: 115px;
+    width: 150px;
+    font-weight: bold;
+    border-radius:10px;
+    background-image:linear-gradient(#db2828c6, #ffca1a); 
+    border: none;
+    box-shadow: 2px 2px 6px 2px rgb(0, 0, 0);
+    height: 30px;
+}
+
+
+/* Hover effect for the button */
+.InnerContainer button:hover{
+    cursor: pointer;
+    color: white;
+    scale: 1.1;
+}
+
+/* Styling for the second inner container */
+.innerTwo{
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #7b7b7b;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+}
+
+
+/* Styling for the remove image */
+.removeImg{
+    width: 20px;
+}
+
+/* Styling for the third inner container */
+.innerThree{
+    background-color: #272727;
+    margin-top: 10px;
+    height: 50px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid rgb(255, 215, 35);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Styling for the span element inside the third inner container */
+.innerThree span{
+    font-weight: bold;
+    font-family: 'Gill Sans';
+    padding-top: 10px;
+}
+
+/* Styling for the completed class, applied when text is completed */
+.completed{
+    text-decoration: line-through;
+    color: red;
+}
+
+/* Styling for the button inside the third inner container */
+.innerThree button{
+    cursor: pointer;
+    padding: 2px;
+}
+
+/* Hover effect for the button in the third inner container */
+.innerThree button:hover{
+    scale: 1.2;
+    background-color: rgb(208, 45, 45);
+    outline:none;
+    border: none;
+}
+
+/* Media query for screen width up to 925px */
+@media (max-width: 925px) {
+
+    /* Responsive styling for the container and its children */
+    .container{
+        width: 60%;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        
+    }
+
+    .InnerContainer{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .InnerContainer input{
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+
+    .InnerContainer button{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        width: 90px;
+        margin-top: 10px;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+/* Media query for screen width between 495px and 750px */
+@media (min-width: 495px) and (max-width: 750px) {
+
+     /* Responsive styling for the body and the container's button */
+    body{
+        background-image: linear-gradient(145deg,rgb(255, 255, 255) , rgb(255, 255, 255));
+    }
+
+    .container{
+       position: sticky;
+       display: flex;
+       margin: auto;
+       flex-direction: column;
+       margin-top: 20px;
+    }
+
+    .InnerContainer button{
+        padding: 10px;
+    }
+}
+
+/* Media query for screen width between 150px and 495px */
+@media (min-width: 150px) and (max-width: 495px) {
+
+     /* Responsive styling for the body, container, inner container, input, and button */
+    body{
+        background-image: linear-gradient(145deg,#171717 , #171717);
+        
+    }
+
+    .container{
+        width: 80%;
+       position: sticky;
+       display: flex;
+       margin: auto;
+       flex-direction: column;
+       margin-top: 20px;
+    }
+
+    .InnerContainer{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .InnerContainer input{
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+
+    .InnerContainer button{
+        width: 80%;
+        display: flex;
+        margin: auto;
+        width: 90px;
+        margin-top: 10px;
+        justify-content: center;
+        padding: 10px;
+
+    }
+    
+}
